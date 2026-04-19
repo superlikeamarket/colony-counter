@@ -1,10 +1,8 @@
-# environments
 venv/
 .venv/
 env/
 ENV/
 
-# python
 __pycache__/
 *.py[cod]
 *.pyo
@@ -13,34 +11,17 @@ __pycache__/
 .mypy_cache/
 .ipynb_checkpoints/
 
-# system
 .DS_Store
 
-# local datasets
+/local/
 /data/
-/local/data/
-
-# generated outputs
 /outputs/
-/local/outputs/
-
-# training runs
 /runs/
-/local/runs/
 
-# temporary notebook / editor junk
 *.tmp
 *.log
 *.swp
 *~
 src/preprocessing/tempCodeRunnerFile.py
 
-# model artifacts (uncomment if you do NOT want to commit weights)
-# *.pt
-# *.pth
-
-# large lab sample dumps
-/local/lab_samples/
-
-# notebook exports
 notebooks/archived/
