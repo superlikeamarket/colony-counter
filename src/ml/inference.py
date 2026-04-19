@@ -76,6 +76,27 @@ def run_inference(model, image_path, config):
     return pred_count, boxes, r.orig_img
 
 
+def run_inference_on_image(model, image, config):
+    results = model(
+        image,
+        conf=config["conf"],
+        iou=config["iou"],
+        imgsz=config["imgsz"],
+        max_det=config.get("max_det", 1000),
+        verbose=False,
+    )
+
+    r = results[0]
+
+    if r.boxes is None:
+        return 0, [], image
+
+    boxes = r.boxes.xyxy.cpu().numpy()
+    count = len(boxes)
+
+    return count, boxes, r.orig_img
+
+
 def main():
     config = load_config()
 

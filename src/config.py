@@ -95,7 +95,7 @@ class ValidationConfig:
     plate_in_frame_margin_fraction: float = 0.1
     # shrink the mask slightly to avoid bright rim affecting blur/overexposure
     # analysis
-    mask_shrink_factor: float = 0.95
+    mask_shrink_factor: float = 1
     # padding around the plate when cropping (5% of radius)
     crop_padding_fraction: float = 0.05
     # target size for resized plates (for consistent blur/overexposure 
