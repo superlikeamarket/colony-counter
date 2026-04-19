@@ -1,0 +1,5 @@
+model: runs/detect/train5/weights/best.pt
+conf: 0.25
+iou: 0.5
+imgsz: 1024
+max_det: 1000

@@ -1,0 +1,7 @@
+path: local/data/dataset_yolo_counting
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: colony
