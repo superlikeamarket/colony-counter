@@ -1,4 +1,8 @@
 model: saved_models/yolo_baseline/best_1024_conf025_iou05.pt
+
+source: assets/example_inputs
+save_dir: outputs/inference
+
 conf: 0.25
 iou: 0.5
 imgsz: 1024
