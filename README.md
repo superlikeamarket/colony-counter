@@ -190,7 +190,7 @@ yolo detect train \
 
 ## Key Design Choices
 
-* **YOLOv8s** chosen for balance of speed and accuracy
+* **YOLOv8n** chosen for balance of speed and accuracy, performed better than YOLOv8s
 * High `max_det` (1000) to handle dense colony plates
 * Grid search performed over:
 
